@@ -1,33 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="dramaqueens.queen.beeText_Main">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="228dp" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_bee_text__main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <ImageButton
+        android:id="@+id/audioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="499dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <ImageButton
+        android:id="@+id/voiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="499dp" />
+
+    <ExpandableListView
+        android:id="@+id/originalLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <ImageButton
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ExpandableListView
+        android:id="@+id/translateLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+</android.support.constraint.ConstraintLayout>
