@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<AbsoluteLayout
     android:background="@color/white_background"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,13 +8,24 @@
     android:layout_height="match_parent"
     tools:context="dramaqueens.queen.beeText_Main">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="197dp" />
+    <ImageView
+        android:id="@+id/beeTextLogo"
+        android:layout_width="92dp"
+        android:layout_height="175dp"
+        app:srcCompat="@mipmap/bee"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="-17dp"
+        android:layout_x="150dp"
+        android:layout_y="10dp" />
+
+    <ExpandableListView
+        android:id="@+id/originalLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:layout_x="30dp"
+        android:layout_y="206dp" />
 
     <ImageButton
         android:id="@+id/audioButton"
@@ -22,15 +33,29 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on"
         tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="487dp" />
+        tools:layout_editor_absoluteY="487dp"
+        android:layout_x="276dp"
+        android:layout_y="510dp" />
 
-    <ImageButton
-        android:id="@+id/voiceButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="487dp" />
+    <TextView
+        android:id="@+id/transliteratedText"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_x="49dp"
+        android:layout_y="244dp" />
+
+    <ExpandableListView
+        android:id="@+id/translateLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:layout_x="172dp"
+        android:layout_y="211dp"
+        android:headerDividersEnabled="false" />
 
     <ImageButton
         android:id="@+id/enterButton"
@@ -38,28 +63,18 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_play"
         tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="131dp" />
-
-    <ExpandableListView
-        android:id="@+id/translateLanguage"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="147dp" />
-
-    <ExpandableListView
-        android:id="@+id/originalLanguage"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="147dp" />
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_x="305dp"
+        android:layout_y="202dp" />
 
     <Chronometer
         android:id="@+id/timeRecorded"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="456dp" />
+        tools:layout_editor_absoluteY="456dp"
+        android:layout_x="63dp"
+        android:layout_y="480dp" />
 
     <TextView
         android:id="@+id/percentageLoaded"
@@ -67,14 +82,16 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="456dp" />
+        tools:layout_editor_absoluteY="456dp"
+        android:layout_x="278dp"
+        android:layout_y="483dp" />
 
-    <ImageView
-        android:id="@+id/beeTextLogo"
-        android:layout_width="92dp"
-        android:layout_height="175dp"
-        app:srcCompat="@mipmap/bee"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="-17dp" />
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="505dp"
+        android:id="@+id/micButton" />
 
-</android.support.constraint.ConstraintLayout>
+</AbsoluteLayout>
