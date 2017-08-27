@@ -14,29 +14,29 @@
 
     <EditText
         android:ems="10"
-        android:layout_marginTop="64dp"
         android:id="@+id/SpeechOut"
         android:singleLine="false"
         android:layout_height="50dp"
         android:layout_width="300dp"
         android:inputType="text"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/Microphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/SpeechOut"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="58dp"
-        android:text="QueenBee" />
+        android:text="QueenBee"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/LoadingImageView"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="200dp"
         app:srcCompat="@drawable/beea0"
         android:id="@+id/LoadingImageView"
-        android:layout_marginTop="25dp"
         android:layout_height="200dp"
-        android:layout_below="@+id/Microphone"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

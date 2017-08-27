@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/transliteratedText"
+        android:layout_width="303dp"
+        android:layout_height="206dp"
+        android:layout_x="49dp"
+        android:layout_y="244dp"
+        android:text="TextView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/enterButton"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/originalLanguage"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/translateLanguage" />
+
+    <Chronometer
+        android:id="@+id/timeRecorded"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_x="63dp"
+        android:layout_y="480dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/transliteratedText"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/micButton"
+        app:layout_constraintRight_toLeftOf="@+id/percentageLoaded"
+        android:layout_marginRight="147dp"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/percentageLoaded"
+        android:layout_width="55dp"
+        android:layout_height="15dp"
+        android:layout_x="278dp"
+        android:layout_y="483dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="258dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/transliteratedText" />
+
+    <ImageView
+        android:id="@+id/beeTextLogo"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:layout_x="150dp"
+        android:layout_y="25dp"
+        app:srcCompat="@mipmap/bee"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/enterButton"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/enter"
+        tools:layout_editor_absoluteX="313dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/beeTextLogo"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/transliteratedText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/micButton"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/micro"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/timeRecorded"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/timeRecorded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_bias="0.545" />
+
+    <ImageButton
+        android:id="@+id/audioButton"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/file"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/percentageLoaded"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/percentageLoaded"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/percentageLoaded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ExpandableListView
+        android:id="@+id/originalLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_x="30dp"
+        android:layout_y="206dp"
+        app:layout_constraintRight_toLeftOf="@+id/translateLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/beeTextLogo"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/transliteratedText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ExpandableListView
+        android:id="@+id/translateLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="14dp"
+        android:layout_x="172dp"
+        android:layout_y="211dp"
+        android:headerDividersEnabled="false"
+        app:layout_constraintRight_toLeftOf="@+id/enterButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/beeTextLogo" />
+</android.support.constraint.ConstraintLayout>
