@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="beeText_background">#FFF9D9</color>
-    <color name="white_background">#FFFFF</color>
+    <color name="white_background">#FFFFFF</color>
 </resources>
