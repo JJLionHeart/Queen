@@ -13,30 +13,23 @@
         android:layout_height="250dp"
         android:text="TextView"
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="228dp" />
+        tools:layout_editor_absoluteY="197dp" />
 
     <ImageButton
         android:id="@+id/audioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="499dp" />
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="487dp" />
 
     <ImageButton
         android:id="@+id/voiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="499dp" />
-
-    <ExpandableListView
-        android:id="@+id/originalLanguage"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="487dp" />
 
     <ImageButton
         android:id="@+id/enterButton"
@@ -44,13 +37,35 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_play"
         tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="131dp" />
 
     <ExpandableListView
         android:id="@+id/translateLanguage"
         android:layout_width="125dp"
         android:layout_height="26dp"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <ExpandableListView
+        android:id="@+id/originalLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <Chronometer
+        android:id="@+id/timeRecorded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <TextView
+        android:id="@+id/percentageLoaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="456dp" />
 
 </android.support.constraint.ConstraintLayout>
