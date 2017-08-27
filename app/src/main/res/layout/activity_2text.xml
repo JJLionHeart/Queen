@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/transliteratedText"
-        android:layout_width="303dp"
-        android:layout_height="206dp"
+        android:layout_width="306dp"
+        android:layout_height="163dp"
         android:layout_x="49dp"
         android:layout_y="244dp"
         android:text="TextView"
@@ -17,7 +17,7 @@
         app:layout_constraintRight_toRightOf="@+id/enterButton"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/originalLanguage"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.414"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@+id/translateLanguage" />
 
@@ -66,12 +66,13 @@
         android:layout_height="58dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/enter"
-        tools:layout_editor_absoluteX="313dp"
         android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/beeTextLogo"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/transliteratedText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
         android:id="@+id/micButton"
@@ -84,8 +85,8 @@
         android:layout_marginRight="0dp"
         app:layout_constraintRight_toRightOf="@+id/timeRecorded"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintHorizontal_bias="0.545" />
+        android:layout_marginBottom="57dp"
+        app:layout_constraintHorizontal_bias="0.757" />
 
     <ImageButton
         android:id="@+id/audioButton"
@@ -100,21 +101,9 @@
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/percentageLoaded"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp" />
-
-    <ExpandableListView
-        android:id="@+id/originalLanguage"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        android:layout_marginRight="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_x="30dp"
-        android:layout_y="206dp"
-        app:layout_constraintRight_toLeftOf="@+id/translateLanguage"
-        app:layout_constraintTop_toBottomOf="@+id/beeTextLogo"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/transliteratedText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.125" />
 
     <ExpandableListView
         android:id="@+id/translateLanguage"
@@ -127,4 +116,20 @@
         app:layout_constraintRight_toLeftOf="@+id/enterButton"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/beeTextLogo" />
+
+    <ExpandableListView
+        android:id="@+id/originalLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_x="30dp"
+        android:layout_y="206dp"
+        app:layout_constraintBottom_toTopOf="@+id/transliteratedText"
+        app:layout_constraintRight_toLeftOf="@+id/translateLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/beeTextLogo"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
