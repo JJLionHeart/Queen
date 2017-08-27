@@ -1,5 +1,6 @@
 package dramaqueens.queen;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
@@ -24,6 +25,7 @@ public class beeText_Main extends AppCompatActivity implements RecognitionListen
     private TextView capturedText;
     private ToggleButton toggleButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,7 @@ public class beeText_Main extends AppCompatActivity implements RecognitionListen
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es_MX");
         toggleButton = (ToggleButton) findViewById(R.id.micButton);
+
         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
@@ -45,12 +48,19 @@ public class beeText_Main extends AppCompatActivity implements RecognitionListen
                     speech.startListening(recognizerIntent);
                 } else {
 
+                    toggleButton.setBackgroundResource(R.drawable.mic0);
                     speech.stopListening();
                 }
             }
         });
     }
-
+    private int[] getResourceId(String base_name, int number){
+        int output[] = new int[number+1];
+        for(int i = 0; i <= number; i++) {
+            output[i] = getResources().getIdentifier(base_name+Integer.toString(i), "drawable", getPackageName());
+        }
+        return output;
+    }
     @Override
     public void onReadyForSpeech(Bundle bundle) {
         Log.i(LOG_TAG, "onReadyForSpeech");
@@ -59,7 +69,7 @@ public class beeText_Main extends AppCompatActivity implements RecognitionListen
     @Override
     public void onBeginningOfSpeech() {
         Log.i(LOG_TAG, "onReadyForSpeech");
-        // TODO: Implementar boton
+
     }
 
     @Override
@@ -83,7 +93,7 @@ public class beeText_Main extends AppCompatActivity implements RecognitionListen
         String errorMessage = getErrorText(errorCode);
         Log.d(LOG_TAG, "FAILED " + errorMessage);
         capturedText.setText(errorMessage);
-        // TODO: Kill animation
+
         toggleButton.setChecked(false);
     }
 

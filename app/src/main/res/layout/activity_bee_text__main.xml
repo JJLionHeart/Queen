@@ -37,36 +37,6 @@
         android:layout_x="276dp"
         android:layout_y="510dp" />
 
-    <TextView
-        android:id="@+id/transliteratedText"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="197dp"
-        android:layout_x="49dp"
-        android:layout_y="244dp" />
-
-    <ExpandableListView
-        android:id="@+id/translateLanguage"
-        android:layout_width="125dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="147dp"
-        android:layout_x="172dp"
-        android:layout_y="211dp"
-        android:headerDividersEnabled="false" />
-
-    <ImageButton
-        android:id="@+id/enterButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_media_play"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="131dp"
-        android:layout_x="305dp"
-        android:layout_y="202dp" />
-
     <Chronometer
         android:id="@+id/timeRecorded"
         android:layout_width="wrap_content"
@@ -87,11 +57,43 @@
         android:layout_y="483dp" />
 
     <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="59dp"
+        android:layout_width="48dp"
+        android:layout_height="55dp"
+        android:layout_x="46dp"
+        android:layout_y="506dp"
+        android:id="@+id/micButton"
+        android:background="@drawable/files0"
+        android:textOn=" "
+        android:textOff=" " />
+
+    <TextView
+        android:id="@+id/transliteratedText"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_x="49dp"
+        android:layout_y="246dp" />
+
+    <ExpandableListView
+        android:id="@+id/translateLanguage"
+        android:layout_width="125dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:layout_x="164dp"
+        android:layout_y="207dp"
+        android:headerDividersEnabled="false" />
+
+    <ImageButton
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="42dp"
-        android:layout_y="505dp"
-        android:id="@+id/micButton" />
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_x="279dp"
+        android:layout_y="196dp" />
 
 </AbsoluteLayout>
